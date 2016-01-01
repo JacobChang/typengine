@@ -1,0 +1,30 @@
+{
+  "name": "typengine",
+  "version": "1.0.0",
+  "description": "simple web server engine writter by TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "tsc",
+    "build": "rm -rf ./dist && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobChang/typedbox.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "server",
+    "engine"
+  ],
+  "author": "Jacob Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacobChang/typengine/issues"
+  },
+  "homepage": "https://github.com/JacobChang/typengine#readme",
+  "devDependencies": {
+    "typescript": "^1.8.0-dev.20151226",
+    "es6-shim": "^0.34.0"
+  }
+}

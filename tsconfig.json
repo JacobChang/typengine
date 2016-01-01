@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": true,
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "outDir": "dist"
+  },
+  "excludes": [
+    "node_modules"
+  ],
+  "files": [
+    "src/app.ts",
+    "src/handlers/static.ts",
+    "src/middlewares/router.ts",
+    "src/renderers/file.ts",
+    "test/test.ts",
+    "test/mimetypes.ts",
+    "test/middleware.ts",
+    "test/util/trie.ts"
+  ]
+}
