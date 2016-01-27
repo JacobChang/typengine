@@ -16,9 +16,11 @@
     "src/handlers/static.ts",
     "src/middlewares/router.ts",
     "src/renderers/file.ts",
+    "test/runner.ts",
     "test/test.ts",
-    "test/mimetypes.ts",
-    "test/middleware.ts",
-    "test/util/trie.ts"
+    "test/suits/mimetypes.ts",
+    "test/suits/middleware.ts",
+    "test/suits/util/trie.ts",
+    "test/suits/handlers/static.ts"
   ]
 }

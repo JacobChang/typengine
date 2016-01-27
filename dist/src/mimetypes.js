@@ -1,6 +1,6 @@
 /// <reference path="../typings/main.d.ts"/>
 "use strict";
-var path = require('path');
+const path = require('path');
 exports.typeToExt = {
     "application/1d-interleaved-parityfec": [],
     "application/3gpp-ims+xml": [],

@@ -6,7 +6,7 @@
   "scripts": {
     "prepublish": "tsc",
     "build": "rm -rf ./dist && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && node ./dist/test/runner.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/JacobChang/typengine#readme",
   "devDependencies": {
-    "typescript": "^1.8.0-dev.20151226",
-    "es6-shim": "^0.34.0"
+    "es6-shim": "^0.34.0",
+    "glob": "^6.0.4",
+    "typescript": "^1.9.0-dev.20160127"
   }
 }

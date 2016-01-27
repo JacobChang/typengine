@@ -1,7 +1,7 @@
-/// <reference path="../typings/main.d.ts"/>
+/// <reference path="../../typings/main.d.ts"/>
 "use strict";
-import { test } from './test';
-import * as mimetypes from '../src/mimetypes';
+import { test } from '../test';
+import * as mimetypes from '../../src/mimetypes';
 
 test('mimetypes', async function(testCase) {
   await testCase.equal(mimetypes.extToType['pdf'], 'application/pdf');

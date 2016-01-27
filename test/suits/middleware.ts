@@ -1,16 +1,16 @@
-/// <reference path="../typings/main.d.ts"/>
+/// <reference path="../../typings/main.d.ts"/>
 "use strict";
-import { test } from './test';
+import { test } from '../test';
 import {
   Request,
   Response
-} from '../src/http';
+} from '../../src/http';
 import {
   Middleware,
   BaseMiddleware,
   MiddlewareDriver,
   MiddlewareResult
-} from '../src/middleware';
+} from '../../src/middleware';
 
 class MockMiddleware extends BaseMiddleware {
   count: number;

@@ -1,7 +1,7 @@
-/// <reference path="../../typings/main.d.ts"/>
+/// <reference path="../../../typings/main.d.ts"/>
 "use strict";
-import { test } from '../test';
-import { Trie, TrieNode } from '../../src/util/trie';
+import { test } from '../../test';
+import { Trie, TrieNode } from '../../../src/util/trie';
 
 test('trie', async function(testCase) {
   let trie = new Trie('/');
