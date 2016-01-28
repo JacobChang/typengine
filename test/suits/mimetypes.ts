@@ -7,8 +7,4 @@ test('mimetypes', async function(testCase) {
   await testCase.equal(mimetypes.extToType['pdf'], 'application/pdf');
 
   await testCase.equal(mimetypes.typeToExt['application/pdf'], 'pdf');
-}).catch(function(err) {
-  console.log(err.actual);
-  console.log(err.expect);
-  console.log(err.stack);
 });

@@ -12,18 +12,18 @@ const middleware_1 = require('../middleware');
 class Router extends middleware_1.MiddlewareDriver {
     constructor() {
         super();
+        this.missHandle = null;
         this.trie = new trie_1.Trie('/');
     }
     serve(request, response) {
         const _super = name => super[name];
         return __awaiter(this, void 0, Promise, function* () {
             let result = yield _super("serve").call(this, request, response);
-            if (result != middleware_1.MiddlewareResult.Continue) {
+            if (result == middleware_1.MiddlewareResult.Abort) {
                 return result;
             }
-            let handler = this.searchHandler(request.url);
-            if (handler) {
-                let handle = handler.handle;
+            let handle = this.searchHandle(request.url);
+            if (handle) {
                 if (handle.handle) {
                     handle.handle(request, response);
                 }
@@ -38,43 +38,21 @@ class Router extends middleware_1.MiddlewareDriver {
             return middleware_1.MiddlewareResult.Done;
         });
     }
-    searchHandler(path) {
+    searchHandle(path) {
+        if (!path) {
+            return this.missHandle;
+        }
         let node = this.trie.search(path);
         if (node) {
             return node.value;
         }
-        return null;
+        return this.missHandle;
     }
     miss(handle) {
         this.missHandle = handle;
     }
-    insertHandler(path, method, handle) {
-        let handler = {
-            method: method,
-            handle: handle
-        };
-        return this.trie.insert(path, handler);
-    }
-    option(path, handle) {
-        return this.insertHandler(path, 'OPTION', handle);
-    }
-    head(path, handle) {
-        return this.insertHandler(path, 'HEAD', handle);
-    }
-    trace(path, handle) {
-        return this.insertHandler(path, 'TRACE', handle);
-    }
-    get(path, handle) {
-        return this.insertHandler(path, 'GET', handle);
-    }
-    post(path, handle) {
-        return this.insertHandler(path, 'POST', handle);
-    }
-    put(path, handle) {
-        return this.insertHandler(path, 'PUT', handle);
-    }
-    del(path, handle) {
-        return this.insertHandler(path, 'DELETE', handle);
+    insertHandle(path, handle) {
+        return this.trie.insert(path, handle);
     }
 }
 exports.Router = Router;

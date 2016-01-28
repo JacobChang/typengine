@@ -44,8 +44,4 @@ test('trie', async function(testCase) {
   await testCase.equal(usersNode.value, 'users-node');
   await testCase.equal(seperatorNode.value, null);
   await testCase.equal(testNode.value, 'test-node');
-}).catch(function(err) {
-  console.log(err.actual);
-  console.log(err.expect);
-  console.log(err.stack);
 });

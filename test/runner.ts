@@ -5,7 +5,7 @@ const path = require('path');
 var files = glob.sync('./dist/test/suits/**/*.js');
 
 files.forEach(function(file) {
-  console.log(`-------- start run test in file {file} -----------`);
+  console.log(`-------- start run test in file ${file} -----------`);
   require(path.join(process.cwd(), file));
-  console.log(`-------- stop run test in file {file} -----------`);
+  console.log(`-------- stop run test in file ${file} -----------`);
 });

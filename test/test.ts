@@ -67,5 +67,9 @@ export interface TestCaseRun {
 export async function test(desc: string, run: TestCaseRun) {
   let testCase = new TestCase(desc);
 
-  await run(testCase)
+  await run(testCase).catch(function(err) {
+    console.log(err.actual);
+    console.log(err.expect);
+    console.log(err.stack);
+  });
 }

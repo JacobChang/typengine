@@ -21,6 +21,7 @@
     "test/suits/mimetypes.ts",
     "test/suits/middleware.ts",
     "test/suits/util/trie.ts",
-    "test/suits/handlers/static.ts"
+    "test/suits/handlers/static.ts",
+    "test/suits/middlewares/router.ts"
   ]
 }

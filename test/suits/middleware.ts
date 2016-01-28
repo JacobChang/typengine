@@ -72,10 +72,6 @@ test('middleware', async function(testCase) {
   ];
   await driver.serve(null, null);
   await testCase.equal(middleware.count, 9);
-}).catch(function(err) {
-  console.log(err.actual);
-  console.log(err.expect);
-  console.log(err.stack);
 });
 
 test('middleware', async function(testCase) {
@@ -123,8 +119,4 @@ test('middleware', async function(testCase) {
   await driver.serve(null, null);
   await testCase.equal(middleware1.count, 9);
   await testCase.equal(middleware2.count, 6);
-}).catch(function(err) {
-  console.log(err.actual);
-  console.log(err.expect);
-  console.log(err.stack);
 });
