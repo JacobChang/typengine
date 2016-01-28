@@ -5,5 +5,4 @@ npm-debug.log
 Thumbs.db
 .DS_Store
 
-dist/test/*.js
-dist/test/*.js.map
+dist/test/*
