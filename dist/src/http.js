@@ -1,5 +1,6 @@
 /// <reference path="../typings/main.d.ts"/>
 "use strict";
+const HttpStatus = {};
 class Request {
     constructor(request) {
         this.request = request;

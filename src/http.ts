@@ -4,6 +4,10 @@ import * as http from 'http';
 import { MimeType } from './mimetypes';
 import { Renderer } from './renderer';
 
+const HttpStatus = {
+  
+};
+
 export class Request {
   constructor(public request: http.IncomingMessage) {
     

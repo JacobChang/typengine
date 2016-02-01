@@ -1,6 +1,6 @@
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new P(function (resolve, reject) {
+    return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator.throw(value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
@@ -17,7 +17,7 @@ class Router extends middleware_1.MiddlewareDriver {
     }
     serve(request, response) {
         const _super = name => super[name];
-        return __awaiter(this, void 0, Promise, function* () {
+        return __awaiter(this, void 0, void 0, function* () {
             let result = yield _super("serve").call(this, request, response);
             if (result == middleware_1.MiddlewareResult.Abort) {
                 return result;

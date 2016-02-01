@@ -5,7 +5,7 @@ export declare class Request {
     constructor(request: http.IncomingMessage);
     method: string;
     url: string;
-    headers: any;
+    readonly headers: any;
     toJSON(): {
         method: string;
         url: string;

@@ -1,7 +1,7 @@
 /// <reference path="../../typings/main.d.ts"/>
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new P(function (resolve, reject) {
+    return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator.throw(value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
@@ -22,7 +22,7 @@ class StaticFileHandler {
         this.root = path.resolve(root);
     }
     handle(request, response) {
-        return __awaiter(this, void 0, Promise, function* () {
+        return __awaiter(this, void 0, void 0, function* () {
             let filePath = this.extractFilePath(request.url);
             if (filePath === '') {
                 response.status = 404;
@@ -60,7 +60,7 @@ class StaticFileHandler {
         return PathType.Valid;
     }
     readFile(absPath) {
-        return __awaiter(this, void 0, Promise, function* () {
+        return __awaiter(this, void 0, void 0, function* () {
             return new Promise(function (resolve, reject) {
                 fs.exists(absPath, function (exists) {
                     if (exists) {
