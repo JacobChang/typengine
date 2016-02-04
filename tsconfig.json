@@ -20,6 +20,7 @@
     "src/handlers/static.ts",
     "src/middlewares/router.ts",
     "src/renderers/file.ts",
+    "src/tools/restrict-file-reader.ts",
     "src/util/trie.ts",
     "test/runner.ts",
     "test/test.ts",
@@ -28,6 +29,7 @@
     "test/suits/util/trie.ts",
     "test/suits/handlers/static.ts",
     "test/suits/middlewares/router.ts",
-    "test/suits/renderers/file.ts"
+    "test/suits/renderers/file.ts",
+    "test/suits/tools/restrict-file-reader.ts"
   ]
 }
