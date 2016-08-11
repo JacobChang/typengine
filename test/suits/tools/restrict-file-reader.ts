@@ -1,4 +1,3 @@
-/// <reference path="../../../typings/main.d.ts"/>
 "use strict";
 import { test } from '../../test';
 import { RestrictFileReader } from '../../../src/tools/restrict-file-reader';

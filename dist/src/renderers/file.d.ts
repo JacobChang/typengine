@@ -1,4 +1,3 @@
-/// <reference path="../../../typings/main.d.ts" />
 import { Renderer } from '../renderer';
 export declare class FileRenderer implements Renderer {
     root: string;

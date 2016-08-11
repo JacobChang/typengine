@@ -1,5 +1,5 @@
 {
   "ambientDependencies": {
-    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#4ad9bef6cc075c904e034e73e1c993b9ad1ba81b"
+    "node": "registry:dt/node#4.0.0+20160319033040"
   }
 }

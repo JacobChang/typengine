@@ -1,4 +1,4 @@
-/// <reference path="../../typings/main.d.ts" />
+/// <reference types="node" />
 import * as http from 'http';
 import { MiddlewareDriver } from './middleware';
 export interface AppConfig {

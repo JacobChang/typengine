@@ -11,5 +11,5 @@ export declare class Router extends MiddlewareDriver implements Middleware {
     serve(request: Request, response: Response): Promise<MiddlewareResult>;
     searchHandle(path: any): RouteHandle;
     miss(handle: RouteHandle): void;
-    insertHandle(path: string, handle: RouteHandle): TrieNode<HttpHandler | HttpHandle>;
+    insertHandle(path: string, handle: RouteHandle): TrieNode<RouteHandle>;
 }

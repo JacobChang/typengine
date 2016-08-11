@@ -1,4 +1,3 @@
-/// <reference path="../typings/main.d.ts"/>
 const glob = require('glob');
 const path = require('path');
 

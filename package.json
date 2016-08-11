@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepublish": "tsc",
-    "build": "rm -rf ./dist && tsc",
+    "build": "rm -rf ./dist && tsc -w",
     "test": "tsc && node ./dist/test/runner.js"
   },
   "repository": {
@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/JacobChang/typengine#readme",
   "devDependencies": {
-    "es6-shim": "^0.34.0",
-    "glob": "^6.0.4",
-    "typescript": "^1.9.0-dev.20160127"
+    "@types/node": "^6.0.32",
+    "glob": "^7.0.5",
+    "typescript": "^2.1.0-dev.20160811"
   }
 }

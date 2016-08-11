@@ -1,4 +1,3 @@
-/// <reference path="../../typings/main.d.ts" />
 export declare let typeToExt: {
     "application/1d-interleaved-parityfec": any[];
     "application/3gpp-ims+xml": any[];

@@ -1,4 +1,3 @@
-/// <reference path="../typings/main.d.ts"/>
 "use strict";
 const path = require('path');
 exports.typeToExt = {

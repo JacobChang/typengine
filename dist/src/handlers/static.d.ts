@@ -1,4 +1,3 @@
-/// <reference path="../../../typings/main.d.ts" />
 import { Request, Response, HttpHandler } from '../http';
 export declare enum PathType {
     OutOfRange = 0,

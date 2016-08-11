@@ -1,4 +1,3 @@
-/// <reference path="../../../typings/main.d.ts" />
 export declare enum PathState {
     NORMAL = 0,
     PATH_REQUIRED = 1,
